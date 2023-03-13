@@ -65,16 +65,10 @@ export function Controls({
 
   }
 
-  function changeModeDark() {
+  function changeMode() {
     body.classList.toggle("active-mode-dark")
-    btnLightMode.classList.add("hide")
-    btnDarkMode.classList.remove("hide")
-  }
-
-  function changeModeLight() {
-    body.classList.toggle("active-mode-dark")
-    btnLightMode.classList.remove("hide")
-    btnDarkMode.classList.add("hide")
+    btnLightMode.classList.toggle("hide")
+    btnDarkMode.classList.toggle("hide")
   }
 
 
@@ -88,7 +82,6 @@ export function Controls({
     rainSoundBackground,
     coffeeShopSoundBackground,
     fireplaceSoundBackground,
-    changeModeDark,
-    changeModeLight
+    changeMode
   }
 }

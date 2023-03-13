@@ -68,11 +68,11 @@ export function Events({controls, sound, timer}) {
   })
 
   btnLightMode.addEventListener('click', function() {
-    controls.changeModeDark()
+    controls.changeMode()
   })
 
   btnDarkMode.addEventListener('click', function() {
-    controls.changeModeLight()
+    controls.changeMode()
   })
 
   cardVolumeFlorest.addEventListener('click', function(event) {
