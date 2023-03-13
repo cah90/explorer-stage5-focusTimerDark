@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-color: #323238;
+  --primary-color: #02799D;
+  --secundary-color: #E1E1E6;
+
+  --ff-color-dark: #C4C4CC;
+  --primary-color-dark: #0A3442;
+  --secondary-color-dark: #29292E;
+  --background-page-dark: #121214;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--ff-color);
+
+  height: min(100vh);
+  
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mode-display {
+  position: absolute;
+  right: 6rem;
+  top: 6rem;
+
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: clamp(300px, 90%, 820px);
+}
+
+@media(max-width: 710px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+  }
+}
+
+
+.timer-display {
+  /* font-size: clamp(2rem,15vw,12.6rem); */
+  font-size: 12.6rem;
+  font-weight: 500;
+  line-height: 14.8rem;
+
+  display: flex;
+}
+
+.btn-controls {
+  cursor: pointer;
+  transition: transform 2s;
+} 
+
+.btn-controls:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.btn-active {
+  color: var(--primary-color);
+}
+
+#pause {
+  background-color: initial;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  display: grid;
+  grid-template-areas: 
+  "florest rain"
+  "coffeeShop fireplace";
+
+  gap: 3rem;
+}
+
+.card {
+  border-radius: 2.4rem;
+  background-color: var(--secundary-color);
+  
+  width: 13.8rem;
+  height: 15.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.card-volum {
+  width: 9rem;
+  height: .5rem;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  accent-color: var(--ff-color);
+}
+
+.active svg {
+  color: #fff;
+}
+
+.active {
+  background-color: var(--primary-color);
+  accent-color: #fff;
+}
+
+.active-dark {
+  background-color: var(--primary-color-dark) !important;
+  accent-color: #fff;
+}
+
+
+.active input[type="range"] {
+  accent-color: #fff;
+}
+
+.active-mode-dark {
+  background-color: var(--background-page-dark);
+}
+
+.active-mode-dark .timer-display {
+  color: #fff;
+}
+
+.active-mode-dark .timer-controls,
+.active-mode-dark #dark-mode,
+.active-mode-dark svg,
+.active-mode-dark input[type="range"] {
+  color: var(--ff-color-dark);
+  accent-color: #fff;
+}
+
+.active-mode-dark .card {
+  background-color: var(--secondary-color-dark);
+}
+
+
+
+#florest-icon {
+  grid-area: florest;
+}
+
+#rain-icon {
+  grid-area: rain;
+}
+
+#coffeeShop-icon {
+  grid-area: coffeeShop;
+}
+
+#fireplace-icon {
+  grid-area: fireplace; 
+}
+
