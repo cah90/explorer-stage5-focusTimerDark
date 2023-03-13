@@ -1,4 +1,4 @@
-# FocusTimer
+# FocusTimer Dark Mode
 
 - Funcionalidades dos botões:
     
