@@ -42,32 +42,26 @@ export function Controls({
   }
 
   function florestSoundBackground() {
-
-    body.classList.contains("active-mode-dark") ? btnFlorestSound.classList.toggle("active-dark") : btnFlorestSound.classList.toggle("active")
-
-    // if(body.classList.contains("active-mode-dark")) {
-    //   console.log("It contains")
-    //   btnFlorestSound.classList.toggle("active-dark")
-
-    // } else {
-    //   console.log("It does not contains")
-    //   btnFlorestSound.classList.toggle("active")
-    // }
+    body.classList.contains("active-mode-dark") ? 
+      btnFlorestSound.classList.toggle("active-dark") : btnFlorestSound.classList.toggle("active")
   }
 
 
   function rainSoundBackground() {
-    btnRainSound.classList.toggle("active")
+    body.classList.contains("active-mode-dark") ? 
+      btnRainSound.classList.toggle("active-dark") : btnRainSound.classList.toggle("active")
 
   }
 
   function coffeeShopSoundBackground() {
-    btnCoffeeShopSound.classList.toggle("active")
+    body.classList.contains("active-mode-dark") ? 
+      btnCoffeeShopSound.classList.toggle("active-dark") : btnCoffeeShopSound.classList.toggle("active")
 
   }
 
   function fireplaceSoundBackground() {
-    btnFireplaceSound.classList.toggle("active")
+    body.classList.contains("active-mode-dark") ? 
+      btnFireplaceSound.classList.toggle("active-dark") : btnFireplaceSound.classList.toggle("active")
 
   }
 

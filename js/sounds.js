@@ -27,31 +27,39 @@ export function Sound({
   }
 
   function playFlorestSound() {
-
-    btnFlorestSound.classList.contains("active") ? florestSound.play() : florestSound.pause()
-
+    btnFlorestSound.classList.contains("active") ||  btnFlorestSound.classList.contains("active-dark") ? 
+      florestSound.play() : florestSound.pause() 
   }
 
   function playRainSound() {
-
-    btnRainSound.classList.contains("active") ? rainSound.play() : rainSound.pause()
-
+    btnRainSound.classList.contains("active") ||  btnRainSound.classList.contains("active-dark") ? 
+      rainSound.play() : rainSound.pause()
   }
 
   function playCoffeeShopSound() {
-
-    btnCoffeeShopSound.classList.contains("active") ? coffeeShopSound.play() : coffeeShopSound.pause()
-
+    btnCoffeeShopSound.classList.contains("active") ||  btnCoffeeShopSound.classList.contains("active-dark") ? 
+      coffeeShopSound.play() : coffeeShopSound.pause()
   }
 
   function playFireplaceSound() {
-
-    btnFireplaceSound.classList.contains("active") ? fireplaceSound.play() : fireplaceSound.pause()
-
+    btnFireplaceSound.classList.contains("active") ||  btnFireplaceSound.classList.contains("active-dark") ? 
+      fireplaceSound.play() : fireplaceSound.pause()
   }
 
   function setFlorestSoundVolume(value) {
     florestSound.volume = value / 100
+  }
+
+  function setRainSoundVolume(value) {
+    rainSound.volume = value / 100
+  }
+
+  function setCoffeeShopSoundVolume(value) {
+    coffeeShopSound.volume = value / 100
+  }
+
+  function setFireplaceSoundVolume(value) {
+    fireplaceSound.volume = value / 100
   }
 
 
@@ -62,7 +70,10 @@ export function Sound({
     playRainSound,
     playCoffeeShopSound,
     playFireplaceSound,
-    setFlorestSoundVolume
+    setFlorestSoundVolume,
+    setRainSoundVolume,
+    setCoffeeShopSoundVolume,
+    setFireplaceSoundVolume
   }
 }
 

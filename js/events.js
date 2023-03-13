@@ -8,11 +8,12 @@ import {
   btnStop,
   btnAddition,
   btnSubtraction,
-  body,
   btnLightMode,
   btnDarkMode,
-  cardVolume,
-  cardVolumeFlorest
+  cardVolumeFlorest,
+  cardVolumeRain,
+  cardVolumeCoffeeShop,
+  cardVolumeFireplace
 } from "./elements.js"
 
 
@@ -78,4 +79,20 @@ export function Events({controls, sound, timer}) {
     event.stopPropagation()
     sound.setFlorestSoundVolume(cardVolumeFlorest.value) 
   })
+
+  cardVolumeRain.addEventListener('click', function(event) {
+    event.stopPropagation()
+    sound.setRainSoundVolume(cardVolumeRain.value)
+  })
+
+  cardVolumeCoffeeShop.addEventListener('click', function(event) {
+    event.stopPropagation()
+    sound.setCoffeeShopSoundVolume(cardVolumeCoffeeShop.value)
+  })
+
+  cardVolumeFireplace.addEventListener('click', function(event) {
+    event.stopPropagation()
+    sound.setFireplaceSoundVolume(cardVolumeFireplace.value)
+  })
+
 }

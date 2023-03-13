@@ -9,12 +9,13 @@ const btnAddition = document.querySelector("#addition")
 const btnSubtraction = document.querySelector("#subtraction")
 
 const cardVolumeFlorest = document.querySelector("#card-volum-florest")
+const cardVolumeRain = document.querySelector("#card-volum-rain")
+const cardVolumeCoffeeShop = document.querySelector("#card-volum-coffeeShop")
+const cardVolumeFireplace = document.querySelector("#card-volum-fireplace")
 
 const body = document.querySelector("#body")
 const btnLightMode = document.querySelector("#light-mode")
 const btnDarkMode = document.querySelector("#dark-mode")
-
-const cardVolume = document.querySelector(".card-volum")
 
 const minutesDisplay = document.querySelector('#minutes')
 const secondsDisplay = document.querySelector('#seconds')
@@ -30,10 +31,12 @@ export {
   btnAddition,
   btnSubtraction,
   cardVolumeFlorest,
+  cardVolumeRain,
+  cardVolumeCoffeeShop,
+  cardVolumeFireplace,
   body,
   btnLightMode,
   btnDarkMode,
-  cardVolume,
   minutesDisplay,
   secondsDisplay
 }

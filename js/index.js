@@ -15,10 +15,8 @@ import {
   body,
   btnLightMode,
   btnDarkMode,
-  cardVolume,
   minutesDisplay,
-  secondsDisplay,
-  cardVolumeFlorest
+  secondsDisplay
 } from "./elements.js"
 
 const controls = Controls({
@@ -33,9 +31,7 @@ const controls = Controls({
   btnSubtraction,
   body,
   btnLightMode,
-  btnDarkMode,
-  cardVolume,
-  cardVolumeFlorest
+  btnDarkMode
 })
 
 const configTimer = {
